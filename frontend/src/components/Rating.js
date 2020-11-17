@@ -1,5 +1,5 @@
 // == Import npm
-import React from 'react';
+import React from 'react'
 import PropTypes from 'prop-types'
 
 // == Import local
@@ -69,11 +69,11 @@ const Rating = ({ value, text, color }) => (
     </span>
     <span> {text && text}</span>
   </div>
-);
+)
 
 Rating.defaultProps = {
   color: '#ffbd00',
-};
+}
 
 Rating.propTypes = {
   value: PropTypes.number.isRequired,
@@ -82,4 +82,4 @@ Rating.propTypes = {
 }
 
 // == Export
-export default Rating;
+export default Rating

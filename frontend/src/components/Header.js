@@ -1,7 +1,7 @@
 // == Import npm
-import React from 'react';
-import { LinkContainer } from 'react-router-bootstrap';
-import { Navbar, Nav, Container } from 'react-bootstrap';
+import React from 'react'
+import { LinkContainer } from 'react-router-bootstrap'
+import { Navbar, Nav, Container } from 'react-bootstrap'
 
 // == Import local
 
@@ -31,7 +31,7 @@ const Header = () => (
       </Container>
     </Navbar>
   </header>
-);
+)
 
 // == Export
-export default Header;
+export default Header

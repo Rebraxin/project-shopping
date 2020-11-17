@@ -1,22 +1,22 @@
 // == Import npm
-import React, { useState, useEffect } from 'react';
-import axios from 'axios';
-import { Col, Row } from 'react-bootstrap';
+import React, { useState, useEffect } from 'react'
+import axios from 'axios'
+import { Col, Row } from 'react-bootstrap'
 
 // == Import local
-import Product from '../components/Product';
+import Product from '../components/Product'
 
 // == Component
 const HomeScreen = () => {
-  const [products, setProducts] = useState([]);
+  const [products, setProducts] = useState([])
   useEffect(() => {
     const fetchProducts = async () => {
-      const { data } = await axios.get('/api/products');
-      setProducts(data);
-    };
+      const { data } = await axios.get('/api/products')
+      setProducts(data)
+    }
 
-    fetchProducts();
-  }, []);
+    fetchProducts()
+  }, [])
 
   return (
     <>
@@ -29,8 +29,8 @@ const HomeScreen = () => {
         ))}
       </Row>
     </>
-  );
-};
+  )
+}
 
 // == Export
-export default HomeScreen;
+export default HomeScreen

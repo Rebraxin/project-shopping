@@ -1,8 +1,8 @@
 // == Import npm
-import React from 'react';
-import { Link } from 'react-router-dom';
-import { Card } from 'react-bootstrap';
-import Rating from './Rating';
+import React from 'react'
+import { Link } from 'react-router-dom'
+import { Card } from 'react-bootstrap'
+import Rating from './Rating'
 
 // == Import local
 
@@ -25,7 +25,7 @@ const Product = ({ product }) => (
       <Card.Text as="h3">{product.price} €</Card.Text>
     </Card.Body>
   </Card>
-);
+)
 
 // == Export
-export default Product;
+export default Product
