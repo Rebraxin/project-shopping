@@ -16,17 +16,23 @@ const HomeScreen = () => {
   const productList = useSelector((state) => state.productList)
   const { loading, error, products } = productList
 
+  console.log(products)
+
   useEffect(() => {
     dispatch(listProducts())
   }, [dispatch])
 
   return (
     <>
+      {/* {products.map((product) => (
+        <p>test = {product._id}</p>
+      ))} */}
+
       <h1>Latest Products</h1>
       {loading ? (
         <Loader />
       ) : error ? (
-        <Message variant='danger'>{error}</Message>
+        <Message variant="danger">{error}</Message>
       ) : (
         <Row>
           {products.map((product) => (
